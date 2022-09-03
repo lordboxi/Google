@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Google Advanced Search</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg">
+</head>
+
+<center>
+    <header>
+        <ul>
+            <li><a class="links" href="#user"><button class="signbuttton" type="button">Sign in</button></a></li>
+                <li><a href="#grid"><img class="grid" src="https://cdn4.iconfinder.com/data/icons/symbol-blue-set-1/100/Untitled-2-22-128.png"></a></li>
+                <li><a href="./index.html">search</a></li>
+                <li><a href="./image.html">images</a></li>
+                <li>
+                    <img alt="Google" class="logo" height="30%" width="30%" src="https://cdn1.iconfinder.com/data/icons/logos-brands-in-colors/272/Google_2015_logo-128.png">
+                </li>
+            </ul>
+        <style>
+ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+
+li{
+    float: right;
+}
+
+li a{
+    color: #000;
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+.grid{
+    height: 23px;
+    position: relative;
+    bottom: 4px;
+}
+
+.signbutton{
+    background-color: #4885ed;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 7px 10px;
+    position: relative;
+    bottom: 7px;
+    font-weight: bold;
+}
+
+.logo{
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4885ed;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+        </style>
+
+    </header>
+
+<body>
+<div class="container">
+        
+        <form action="https://www.google.com/search" method="get">
+
+
+    <div class="row">
+        <div class="col-25">
+            <label for="fname">all these words:</label>
+        </div>
+        <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="all these words">
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-25">
+            <label for="as_q">this exact word or phrase:</label>
+        </div>
+        <div class="col-75">
+            <input type="text" id="as_q" name="as_q" placeholder="this exact word or phrase:..">
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-25">
+            <label for="as_oq">any of these words:</label>
+        </div>
+        <div class="col-75">
+            <input type="text" id="as_oq" name="as_oq" placeholder="any of these words:..">
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-25">
+            <label for="as_eq">none of these words:</label>
+        </div>
+        <div class="col-75">
+            <input type="text" id="as_eq" name="as_eq" placeholder="none of these words:..">
+        </div>
+    </div>
+
+    <div class="row">
+        <input type="submit" value="Advanced Search">
+    </div>
+
+
+    </form>
+</div>
+    
+
+    
+
+
+</body>
+</html>
