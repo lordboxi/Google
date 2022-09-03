@@ -1,18 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+  <html lang="en">
     <head>
         <title>
             Google Serach
         </title>
     </head>
 
- <center>
+
+<center>
     <header>
         <ul>
+            <li><a class="links" href="#users"><button class="signbutton" type="button"></button></a></li>
             <li><a href="./image.html">images</a></li>
             <li><a href="./advanced.html">advanced</a></li>
-            </ul>
         </ul>
+      <style>
+        ul {
+          list-style-type: none;
+          overflow: hidden;
+        }
+        
+        li {
+          float: right;
+        }
+        
+        li a {
+          color: #000;
+          display: block;
+          text-align: center;
+          padding: 10px 10px;
+          text-decoration: none;
+          font-size: 14px;
+        }
+        
+        li a:hover {
+          text-decoration: underline;
+        }
+        
+        .grid {
+          height: 23px;
+          position: relative;
+          bottom: 4px
+        }
+        
+        .signbutton {
+          background-color: #4885ed;
+          color: #fff;
+          border: none;
+          border-radius: 3px;
+          padding: 7px 10px;
+          position: relative;
+          bottom: 7px;
+          font-weight: bold;
+        }
+        
+        .logo {
+          margin-top: 200px;
+          margin-bottom: 20px;
+        }
+        
+        .bar {
+          margin: 0 auto;
+          width: 575px;
+          border-radius: 30px;
+          border: 1px solid #dcdcdc;
+        }
+        
+        .bar:hover {
+          boc-shadow: 1px 1px 8px 1px #dcdcdc;
+        }
+        
+        .bar:focus-within {
+          box-shadow: 1px 1px 8px 1px #dcdcdc;
+          outline: none;
+        }
+        
+        .searchbar {
+          height: 45px;
+          border: none;
+          width: 500px;
+          font-size: 16px;
+          outline: none;
+        }
+        
+        .voice {
+          height: 20px;
+          position: relative;
+          top: 5px;
+          left: 10px;
+        }
+        
+        .bottons {
+          margin-top: 30px;
+        }
+        
+        .button {
+          background-color: #1552ed;
+          border: none;
+          color: #fff;
+          font-size: 15px;
+          padding: 10px 20px;
+          margin: 5px;
+          border-radius: 4px;
+          outline: none;
+        }
+        
+        .button:gover {
+          border: 1px solid #c8c8c8;
+          padding: 9px 19px;
+          color: #808080;
+        }
+        
+        .button:focus {
+          border: 1px solid #4885ed;
+          padding: 9px 19px;
+        }
+        </style>
+      
     </header>
 
     <body>
@@ -25,9 +129,9 @@
             </div>
             <div class = "buttons">
                 <button class = "button" type="submit">Google Search</button>
-                <button class = "button" type="submit" name="btnI" value="1" >I'm Feeling Lucky</button>
+                <button class="button" type="button">I'm Feeling Lucky</button>
             </div>
         </form>
     </body>
- </center>
+</center>
 </html>
